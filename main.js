@@ -6,11 +6,15 @@
   const startBtn = document.getElementById(`startBtn`);
 
 
-  class answerState {
-    quizzes = [];
-    currentIndex = 0;
-    numberOfCurrets = 0;
+  class AnswerState {
+    function() {
+      this.quizzes = [];
+      this.currentIndex = 0;
+      this.numberOfCurrets = 0;
+    }
   }
+
+  const answerState = new AnswerState();
 
   //開始ボタンをクリックした時に、URLから問題を取得して最初の問題を表示する
 
